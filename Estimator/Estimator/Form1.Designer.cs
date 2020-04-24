@@ -173,6 +173,8 @@
             this.Controls.Add(this.loginPane);
             this.Controls.Add(this.ImagePane);
             this.Controls.Add(this.headerPane);
+            this.MaximumSize = new System.Drawing.Size(931, 473);
+            this.MinimumSize = new System.Drawing.Size(931, 473);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.headerPane.ResumeLayout(false);
