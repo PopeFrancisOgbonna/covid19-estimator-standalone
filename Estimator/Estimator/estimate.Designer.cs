@@ -54,6 +54,7 @@
             this.ImagePane = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.mildTab = new System.Windows.Forms.TabPage();
+            this.mildList = new System.Windows.Forms.ListBox();
             this.severeTab = new System.Windows.Forms.TabPage();
             this.preventTab = new System.Windows.Forms.TabPage();
             this.spreadTab = new System.Windows.Forms.TabPage();
@@ -63,10 +64,13 @@
             this.btnGet = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
+            this.severeList = new System.Windows.Forms.ListBox();
             this.loginPane.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.ImagePane.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.mildTab.SuspendLayout();
+            this.severeTab.SuspendLayout();
             this.headerPane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -109,7 +113,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Covid19 Data";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // comboPeriod
             // 
@@ -119,6 +122,7 @@
             this.comboPeriod.Name = "comboPeriod";
             this.comboPeriod.Size = new System.Drawing.Size(203, 28);
             this.comboPeriod.TabIndex = 10;
+            this.comboPeriod.Text = "Choose Period Type";
             // 
             // txtTime
             // 
@@ -245,7 +249,6 @@
             this.txtctry.Size = new System.Drawing.Size(176, 26);
             this.txtctry.TabIndex = 2;
             this.txtctry.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtctry.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label6
             // 
@@ -282,7 +285,6 @@
             this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Region";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
             // 
@@ -317,6 +319,7 @@
             // 
             // mildTab
             // 
+            this.mildTab.Controls.Add(this.mildList);
             this.mildTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mildTab.Location = new System.Drawing.Point(4, 27);
             this.mildTab.Name = "mildTab";
@@ -326,8 +329,18 @@
             this.mildTab.Text = "Mild Impact";
             this.mildTab.UseVisualStyleBackColor = true;
             // 
+            // mildList
+            // 
+            this.mildList.FormattingEnabled = true;
+            this.mildList.ItemHeight = 20;
+            this.mildList.Location = new System.Drawing.Point(6, 5);
+            this.mildList.Name = "mildList";
+            this.mildList.Size = new System.Drawing.Size(496, 364);
+            this.mildList.TabIndex = 0;
+            // 
             // severeTab
             // 
+            this.severeTab.Controls.Add(this.severeList);
             this.severeTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.severeTab.Location = new System.Drawing.Point(4, 27);
             this.severeTab.Name = "severeTab";
@@ -399,6 +412,7 @@
             this.btnGet.TabIndex = 6;
             this.btnGet.Text = "Get Estimation";
             this.btnGet.UseVisualStyleBackColor = false;
+            this.btnGet.Click += new System.EventHandler(this.btnGet_Click);
             // 
             // btnClear
             // 
@@ -424,6 +438,15 @@
             this.btnPrint.Text = "Print Result";
             this.btnPrint.UseVisualStyleBackColor = false;
             // 
+            // severeList
+            // 
+            this.severeList.FormattingEnabled = true;
+            this.severeList.ItemHeight = 20;
+            this.severeList.Location = new System.Drawing.Point(6, 4);
+            this.severeList.Name = "severeList";
+            this.severeList.Size = new System.Drawing.Size(496, 364);
+            this.severeList.TabIndex = 0;
+            // 
             // estimate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,6 +467,8 @@
             this.groupBox1.PerformLayout();
             this.ImagePane.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.mildTab.ResumeLayout(false);
+            this.severeTab.ResumeLayout(false);
             this.headerPane.ResumeLayout(false);
             this.headerPane.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -486,5 +511,7 @@
         private System.Windows.Forms.Button btnGet;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.ListBox mildList;
+        private System.Windows.Forms.ListBox severeList;
     }
 }
