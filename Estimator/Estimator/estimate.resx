@@ -117,6 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richPrevent.Text" xml:space="preserve">
+    <value>Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local public health agency. To prevent the spread of COVID-19:
+ 1. Clean your hands often. Use soap and water, or an alcohol-based hand rub.
+ 2. Maintain a safe distance from anyone who is coughing or sneezing
+ 3. Don’t touch your eyes, nose or mouth
+ 4. Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.
+ 5. Stay home if you feel unwell.
+ 6. If you have a fever, a cough, and difficulty breathing, seek medical attention. Call in advance.
+ 7. Follow the directions of your local health authority.</value>
+  </data>
+  <data name="richSpread.Text" xml:space="preserve">
+    <value>The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors or surfaces. You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

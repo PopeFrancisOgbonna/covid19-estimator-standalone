@@ -59,9 +59,26 @@ namespace Estimator
             mildList.Items.Add("Cases for Intensive Unit Care By Requested Time: " + impact.iCUByRT);
             mildList.Items.Add("Cases Requiring Ventilators By Requested Time: " + impact.ventByRT);
             mildList.Items.Add("Estimated Economic Loss in Dollar ($USD): " + impact.dollarFlt);
+            if(impact.bedByRT < 0)
+            {
+                string warning;
+                warning = "There is likely to be a shortage of Bed space By " + Math.Abs(impact.bedByRT) + "Mild infected Persons";
+                mildList.Items.Add(warning);
+            }
 
             //Displaying Result for Severe Impact cases of the Estimation
-            
+            severeList.Items.Add("Currently Infected Persons: " + severeImpact.Cinfected);
+            severeList.Items.Add("Infected Persons By Requested Time: " + severeImpact.infectByRT);
+            severeList.Items.Add("Severe Cases By Requested Time: " + severeImpact.CaseByRT);
+            severeList.Items.Add("Available Hospital Beds By Requested Time: " + severeImpact.bedByRT);
+            severeList.Items.Add("Cases for Intensive Care Unit By Requested Time: " + severeImpact.iCUByRT);
+            severeList.Items.Add("Cases requiring Ventilators By Requested Time: " + severeImpact.ventByRT);
+            severeList.Items.Add("Estimated Economic Loss in Dollar ($USD): " + severeImpact.dollarFlt);
+            if(severeImpact.bedByRT < 0)
+            {
+                string warning;
+                warning = "There is likely to be a shortage of Bed space by " + Math.Abs(severeImpact.bedByRT) + "for Severe Infected Persons";
+            }
         }
 
         private void combofill()
@@ -88,8 +105,22 @@ namespace Estimator
             }
             return normalized;
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtAge.Clear();
+            txtAvgIncDolar.Clear();
+            txtAvglncom.Clear();
+            txtBed.Clear();
+            txtCases.Clear();
+            txtctry.Clear();
+            txtPopulation.Clear();
+            txtRegion.Clear();
+            txtTime.Clear();
+            comboPeriod.Text = "Choose Period Type";
+        }
     }
-    
+
     public class impact
     {
         public int Cinfected;

@@ -56,21 +56,25 @@
             this.mildTab = new System.Windows.Forms.TabPage();
             this.mildList = new System.Windows.Forms.ListBox();
             this.severeTab = new System.Windows.Forms.TabPage();
+            this.severeList = new System.Windows.Forms.ListBox();
             this.preventTab = new System.Windows.Forms.TabPage();
+            this.richPrevent = new System.Windows.Forms.RichTextBox();
             this.spreadTab = new System.Windows.Forms.TabPage();
+            this.richSpread = new System.Windows.Forms.RichTextBox();
             this.headerPane = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnGet = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
-            this.severeList = new System.Windows.Forms.ListBox();
             this.loginPane.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.ImagePane.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.mildTab.SuspendLayout();
             this.severeTab.SuspendLayout();
+            this.preventTab.SuspendLayout();
+            this.spreadTab.SuspendLayout();
             this.headerPane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -310,11 +314,12 @@
             this.tabControl1.Controls.Add(this.severeTab);
             this.tabControl1.Controls.Add(this.preventTab);
             this.tabControl1.Controls.Add(this.spreadTab);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(8, 6);
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(516, 404);
+            this.tabControl1.Size = new System.Drawing.Size(532, 417);
             this.tabControl1.TabIndex = 0;
             // 
             // mildTab
@@ -324,18 +329,19 @@
             this.mildTab.Location = new System.Drawing.Point(4, 27);
             this.mildTab.Name = "mildTab";
             this.mildTab.Padding = new System.Windows.Forms.Padding(3);
-            this.mildTab.Size = new System.Drawing.Size(508, 373);
+            this.mildTab.Size = new System.Drawing.Size(524, 386);
             this.mildTab.TabIndex = 0;
             this.mildTab.Text = "Mild Impact";
             this.mildTab.UseVisualStyleBackColor = true;
             // 
             // mildList
             // 
+            this.mildList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mildList.FormattingEnabled = true;
             this.mildList.ItemHeight = 20;
-            this.mildList.Location = new System.Drawing.Point(6, 5);
+            this.mildList.Location = new System.Drawing.Point(3, 3);
             this.mildList.Name = "mildList";
-            this.mildList.Size = new System.Drawing.Size(496, 364);
+            this.mildList.Size = new System.Drawing.Size(518, 380);
             this.mildList.TabIndex = 0;
             // 
             // severeTab
@@ -345,30 +351,63 @@
             this.severeTab.Location = new System.Drawing.Point(4, 27);
             this.severeTab.Name = "severeTab";
             this.severeTab.Padding = new System.Windows.Forms.Padding(3);
-            this.severeTab.Size = new System.Drawing.Size(508, 373);
+            this.severeTab.Size = new System.Drawing.Size(524, 386);
             this.severeTab.TabIndex = 1;
             this.severeTab.Text = "Severe Impact";
             this.severeTab.UseVisualStyleBackColor = true;
             // 
+            // severeList
+            // 
+            this.severeList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.severeList.FormattingEnabled = true;
+            this.severeList.ItemHeight = 20;
+            this.severeList.Location = new System.Drawing.Point(3, 3);
+            this.severeList.Name = "severeList";
+            this.severeList.Size = new System.Drawing.Size(518, 380);
+            this.severeList.TabIndex = 0;
+            // 
             // preventTab
             // 
+            this.preventTab.Controls.Add(this.richPrevent);
             this.preventTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.preventTab.Location = new System.Drawing.Point(4, 27);
             this.preventTab.Name = "preventTab";
-            this.preventTab.Size = new System.Drawing.Size(508, 373);
+            this.preventTab.Size = new System.Drawing.Size(524, 386);
             this.preventTab.TabIndex = 2;
             this.preventTab.Text = "Preventive Measures";
             this.preventTab.UseVisualStyleBackColor = true;
             // 
+            // richPrevent
+            // 
+            this.richPrevent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richPrevent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richPrevent.Location = new System.Drawing.Point(0, 0);
+            this.richPrevent.Name = "richPrevent";
+            this.richPrevent.ReadOnly = true;
+            this.richPrevent.Size = new System.Drawing.Size(524, 386);
+            this.richPrevent.TabIndex = 0;
+            this.richPrevent.Text = resources.GetString("richPrevent.Text");
+            // 
             // spreadTab
             // 
+            this.spreadTab.Controls.Add(this.richSpread);
             this.spreadTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spreadTab.Location = new System.Drawing.Point(4, 27);
             this.spreadTab.Name = "spreadTab";
-            this.spreadTab.Size = new System.Drawing.Size(508, 373);
+            this.spreadTab.Size = new System.Drawing.Size(524, 386);
             this.spreadTab.TabIndex = 3;
             this.spreadTab.Text = "How it Spreads";
             this.spreadTab.UseVisualStyleBackColor = true;
+            // 
+            // richSpread
+            // 
+            this.richSpread.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richSpread.Location = new System.Drawing.Point(0, 0);
+            this.richSpread.Name = "richSpread";
+            this.richSpread.ReadOnly = true;
+            this.richSpread.Size = new System.Drawing.Size(524, 386);
+            this.richSpread.TabIndex = 0;
+            this.richSpread.Text = resources.GetString("richSpread.Text");
             // 
             // headerPane
             // 
@@ -425,6 +464,7 @@
             this.btnClear.TabIndex = 6;
             this.btnClear.Text = "Clear Fields";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnPrint
             // 
@@ -437,15 +477,6 @@
             this.btnPrint.TabIndex = 6;
             this.btnPrint.Text = "Print Result";
             this.btnPrint.UseVisualStyleBackColor = false;
-            // 
-            // severeList
-            // 
-            this.severeList.FormattingEnabled = true;
-            this.severeList.ItemHeight = 20;
-            this.severeList.Location = new System.Drawing.Point(6, 4);
-            this.severeList.Name = "severeList";
-            this.severeList.Size = new System.Drawing.Size(496, 364);
-            this.severeList.TabIndex = 0;
             // 
             // estimate
             // 
@@ -469,6 +500,8 @@
             this.tabControl1.ResumeLayout(false);
             this.mildTab.ResumeLayout(false);
             this.severeTab.ResumeLayout(false);
+            this.preventTab.ResumeLayout(false);
+            this.spreadTab.ResumeLayout(false);
             this.headerPane.ResumeLayout(false);
             this.headerPane.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -513,5 +546,7 @@
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.ListBox mildList;
         private System.Windows.Forms.ListBox severeList;
+        private System.Windows.Forms.RichTextBox richPrevent;
+        private System.Windows.Forms.RichTextBox richSpread;
     }
 }
