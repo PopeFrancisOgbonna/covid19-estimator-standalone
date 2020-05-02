@@ -51,39 +51,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.ImagePane = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.mildTab = new System.Windows.Forms.TabPage();
-            this.mildList = new System.Windows.Forms.ListBox();
-            this.severeTab = new System.Windows.Forms.TabPage();
-            this.severeList = new System.Windows.Forms.ListBox();
-            this.preventTab = new System.Windows.Forms.TabPage();
-            this.richPrevent = new System.Windows.Forms.RichTextBox();
-            this.spreadTab = new System.Windows.Forms.TabPage();
-            this.richSpread = new System.Windows.Forms.RichTextBox();
-            this.headerPane = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnGet = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.btnPrint = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.headerPane = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bodyPanel = new System.Windows.Forms.Panel();
+            this.img = new System.Windows.Forms.PictureBox();
             this.loginPane.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.ImagePane.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.mildTab.SuspendLayout();
-            this.severeTab.SuspendLayout();
-            this.preventTab.SuspendLayout();
-            this.spreadTab.SuspendLayout();
-            this.headerPane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.headerPane.SuspendLayout();
+            this.bodyPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img)).BeginInit();
             this.SuspendLayout();
             // 
             // loginPane
             // 
             this.loginPane.BackColor = System.Drawing.Color.Silver;
             this.loginPane.Controls.Add(this.groupBox1);
-            this.loginPane.Location = new System.Drawing.Point(12, 97);
+            this.loginPane.Location = new System.Drawing.Point(7, 7);
             this.loginPane.Name = "loginPane";
             this.loginPane.Size = new System.Drawing.Size(426, 370);
             this.loginPane.TabIndex = 3;
@@ -299,115 +286,41 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Average Daily Income of Population (%)";
             // 
-            // ImagePane
+            // btnGet
             // 
-            this.ImagePane.BackColor = System.Drawing.Color.Silver;
-            this.ImagePane.Controls.Add(this.tabControl1);
-            this.ImagePane.Location = new System.Drawing.Point(444, 88);
-            this.ImagePane.Name = "ImagePane";
-            this.ImagePane.Size = new System.Drawing.Size(532, 417);
-            this.ImagePane.TabIndex = 4;
+            this.btnGet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(146)))), ((int)(((byte)(5)))));
+            this.btnGet.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGet.ForeColor = System.Drawing.Color.White;
+            this.btnGet.Location = new System.Drawing.Point(42, 388);
+            this.btnGet.Name = "btnGet";
+            this.btnGet.Size = new System.Drawing.Size(160, 45);
+            this.btnGet.TabIndex = 6;
+            this.btnGet.Text = "Get Estimation";
+            this.btnGet.UseVisualStyleBackColor = false;
+            this.btnGet.Click += new System.EventHandler(this.btnGet_Click);
             // 
-            // tabControl1
+            // btnClear
             // 
-            this.tabControl1.Controls.Add(this.mildTab);
-            this.tabControl1.Controls.Add(this.severeTab);
-            this.tabControl1.Controls.Add(this.preventTab);
-            this.tabControl1.Controls.Add(this.spreadTab);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(532, 417);
-            this.tabControl1.TabIndex = 0;
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.btnClear.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(297, 388);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(128, 45);
+            this.btnClear.TabIndex = 6;
+            this.btnClear.Text = "Clear Fields";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // mildTab
+            // pictureBox1
             // 
-            this.mildTab.Controls.Add(this.mildList);
-            this.mildTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mildTab.Location = new System.Drawing.Point(4, 27);
-            this.mildTab.Name = "mildTab";
-            this.mildTab.Padding = new System.Windows.Forms.Padding(3);
-            this.mildTab.Size = new System.Drawing.Size(524, 386);
-            this.mildTab.TabIndex = 0;
-            this.mildTab.Text = "Mild Impact";
-            this.mildTab.UseVisualStyleBackColor = true;
-            // 
-            // mildList
-            // 
-            this.mildList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mildList.FormattingEnabled = true;
-            this.mildList.ItemHeight = 20;
-            this.mildList.Location = new System.Drawing.Point(3, 3);
-            this.mildList.Name = "mildList";
-            this.mildList.Size = new System.Drawing.Size(518, 380);
-            this.mildList.TabIndex = 0;
-            // 
-            // severeTab
-            // 
-            this.severeTab.Controls.Add(this.severeList);
-            this.severeTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.severeTab.Location = new System.Drawing.Point(4, 27);
-            this.severeTab.Name = "severeTab";
-            this.severeTab.Padding = new System.Windows.Forms.Padding(3);
-            this.severeTab.Size = new System.Drawing.Size(524, 386);
-            this.severeTab.TabIndex = 1;
-            this.severeTab.Text = "Severe Impact";
-            this.severeTab.UseVisualStyleBackColor = true;
-            // 
-            // severeList
-            // 
-            this.severeList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.severeList.FormattingEnabled = true;
-            this.severeList.ItemHeight = 20;
-            this.severeList.Location = new System.Drawing.Point(3, 3);
-            this.severeList.Name = "severeList";
-            this.severeList.Size = new System.Drawing.Size(518, 380);
-            this.severeList.TabIndex = 0;
-            // 
-            // preventTab
-            // 
-            this.preventTab.Controls.Add(this.richPrevent);
-            this.preventTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.preventTab.Location = new System.Drawing.Point(4, 27);
-            this.preventTab.Name = "preventTab";
-            this.preventTab.Size = new System.Drawing.Size(524, 386);
-            this.preventTab.TabIndex = 2;
-            this.preventTab.Text = "Preventive Measures";
-            this.preventTab.UseVisualStyleBackColor = true;
-            // 
-            // richPrevent
-            // 
-            this.richPrevent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richPrevent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richPrevent.Location = new System.Drawing.Point(0, 0);
-            this.richPrevent.Name = "richPrevent";
-            this.richPrevent.ReadOnly = true;
-            this.richPrevent.Size = new System.Drawing.Size(524, 386);
-            this.richPrevent.TabIndex = 0;
-            this.richPrevent.Text = resources.GetString("richPrevent.Text");
-            // 
-            // spreadTab
-            // 
-            this.spreadTab.Controls.Add(this.richSpread);
-            this.spreadTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spreadTab.Location = new System.Drawing.Point(4, 27);
-            this.spreadTab.Name = "spreadTab";
-            this.spreadTab.Size = new System.Drawing.Size(524, 386);
-            this.spreadTab.TabIndex = 3;
-            this.spreadTab.Text = "How it Spreads";
-            this.spreadTab.UseVisualStyleBackColor = true;
-            // 
-            // richSpread
-            // 
-            this.richSpread.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richSpread.Location = new System.Drawing.Point(0, 0);
-            this.richSpread.Name = "richSpread";
-            this.richSpread.ReadOnly = true;
-            this.richSpread.Size = new System.Drawing.Size(524, 386);
-            this.richSpread.TabIndex = 0;
-            this.richSpread.Text = resources.GetString("richSpread.Text");
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // headerPane
             // 
@@ -416,7 +329,7 @@
             this.headerPane.Controls.Add(this.pictureBox1);
             this.headerPane.Location = new System.Drawing.Point(12, 7);
             this.headerPane.Name = "headerPane";
-            this.headerPane.Size = new System.Drawing.Size(964, 75);
+            this.headerPane.Size = new System.Drawing.Size(976, 75);
             this.headerPane.TabIndex = 5;
             // 
             // label1
@@ -430,91 +343,52 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Covid-19 Impact Estimator";
             // 
-            // pictureBox1
+            // bodyPanel
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.bodyPanel.Controls.Add(this.img);
+            this.bodyPanel.Controls.Add(this.btnGet);
+            this.bodyPanel.Controls.Add(this.btnClear);
+            this.bodyPanel.Controls.Add(this.loginPane);
+            this.bodyPanel.Location = new System.Drawing.Point(12, 84);
+            this.bodyPanel.MaximumSize = new System.Drawing.Size(977, 437);
+            this.bodyPanel.Name = "bodyPanel";
+            this.bodyPanel.Size = new System.Drawing.Size(977, 437);
+            this.bodyPanel.TabIndex = 7;
             // 
-            // btnGet
+            // img
             // 
-            this.btnGet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(146)))), ((int)(((byte)(5)))));
-            this.btnGet.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGet.ForeColor = System.Drawing.Color.White;
-            this.btnGet.Location = new System.Drawing.Point(30, 473);
-            this.btnGet.Name = "btnGet";
-            this.btnGet.Size = new System.Drawing.Size(160, 45);
-            this.btnGet.TabIndex = 6;
-            this.btnGet.Text = "Get Estimation";
-            this.btnGet.UseVisualStyleBackColor = false;
-            this.btnGet.Click += new System.EventHandler(this.btnGet_Click);
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.btnClear.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(303, 473);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(128, 45);
-            this.btnClear.TabIndex = 6;
-            this.btnClear.Text = "Clear Fields";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(121)))), ((int)(((byte)(118)))));
-            this.btnPrint.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.ForeColor = System.Drawing.Color.White;
-            this.btnPrint.Location = new System.Drawing.Point(833, 511);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(135, 37);
-            this.btnPrint.TabIndex = 6;
-            this.btnPrint.Text = "Print Result";
-            this.btnPrint.UseVisualStyleBackColor = false;
+            this.img.Image = ((System.Drawing.Image)(resources.GetObject("img.Image")));
+            this.img.Location = new System.Drawing.Point(439, 42);
+            this.img.Name = "img";
+            this.img.Size = new System.Drawing.Size(537, 367);
+            this.img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img.TabIndex = 7;
+            this.img.TabStop = false;
             // 
             // estimate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 555);
-            this.Controls.Add(this.btnPrint);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnGet);
-            this.Controls.Add(this.loginPane);
-            this.Controls.Add(this.ImagePane);
+            this.ClientSize = new System.Drawing.Size(1001, 540);
+            this.Controls.Add(this.bodyPanel);
             this.Controls.Add(this.headerPane);
-            this.MaximumSize = new System.Drawing.Size(1000, 594);
-            this.MinimumSize = new System.Drawing.Size(1000, 594);
+            this.MaximumSize = new System.Drawing.Size(1017, 579);
             this.Name = "estimate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.loginPane.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.ImagePane.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.mildTab.ResumeLayout(false);
-            this.severeTab.ResumeLayout(false);
-            this.preventTab.ResumeLayout(false);
-            this.spreadTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.headerPane.ResumeLayout(false);
             this.headerPane.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.bodyPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.img)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel loginPane;
-        private System.Windows.Forms.Panel ImagePane;
-        private System.Windows.Forms.Panel headerPane;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -536,17 +410,12 @@
         private System.Windows.Forms.TextBox txtBed;
         private System.Windows.Forms.TextBox txtCases;
         private System.Windows.Forms.ComboBox comboPeriod;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage mildTab;
-        private System.Windows.Forms.TabPage severeTab;
-        private System.Windows.Forms.TabPage preventTab;
-        private System.Windows.Forms.TabPage spreadTab;
         private System.Windows.Forms.Button btnGet;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnPrint;
-        private System.Windows.Forms.ListBox mildList;
-        private System.Windows.Forms.ListBox severeList;
-        private System.Windows.Forms.RichTextBox richPrevent;
-        private System.Windows.Forms.RichTextBox richSpread;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel headerPane;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel bodyPanel;
+        private System.Windows.Forms.PictureBox img;
     }
 }
